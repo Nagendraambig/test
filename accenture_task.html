@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="accenture_task.css">
+</head>
+<body>
+  <h1>Outbound link detection</h1>
+<p>The JavaScript on this page tries to detect all outbound links and set their <code>target</code> attribute to the value <code>_blank</code>. Only outbound links should be affected (and colored <span class="outbound">green</span>).</p>
+<h2>Same domain links</h2>
+
+<ul>
+  <li><a href="https://s.codepen.io">https://s.codepen.io</a></li>
+  <li><a href="https://s.codepen.io/login">https://s.codepen.io/login</a></li>
+  <li><a href="http://user@s.codepen.io">http://user@s.codepen.io</a></li>
+  <li><a href="http://user:pass@s.codepen.io">http://user:pass@s.codepen.io</a></li>
+  <li><a href="http://user:pass@s.codepen.io:80">http://user:pass@s.codepen.io:80</a></li>
+  <li><a href="//s.codepen.io">//s.codepen.io</a></li>
+  <li><a href="ftp://s.codepen.io">ftp://s.codepen.io</a></li>
+</ul>
+<p class="hint">Codepen seems to run pens under the domain <strong>s.codepen.io</strong>, so this is to be considered the current domain for any "same domain" check.</p>
+<h2>Outbound links</h2>
+<ul>
+  <li><a href="https://github.com">https://github.com</a></li>
+  <li><a href="https://github.com/login">https://github.com/login</a></li>
+  <li><a href="http://user@github.com">http://user@github.com</a></li>
+  <li><a href="http://user:pass@github.com">http://user:pass@github.com</a></li>
+  <li><a href="http://user:pass@github.com:80">http://user:pass@github.com:80</a></li>
+  <li><a href="//github.com">//github.com</a></li>
+  <li><a href="ftp://github.com">ftp://github.com</a></li>
+</ul>
+<h2>Other links</h2>
+<ul>
+  <li><a href="relative/link">relative/link</a></li>
+  <li><a href="/relative/link">/relative/link</a></li>
+  <li><a href="#anchor">#anchor</a></li>
+</ul>
+<script src="accenture_task.js"></script>
+</body>
+</html>
