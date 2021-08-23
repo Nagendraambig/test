@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <a href="http://kanishkkunal.com" 
+  target="popup" 
+  onclick="window.open('http://kanishkkunal.com','popup','width=600,height=600'); return false;">
+    Open Link in Popup
+</a>
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.github.com" onclick="get(href);">Github</a>
+        <a href="http://www.accenture.com" onclick="get(href);">Accenture</a>
+        <a href="http://www.crickbuzz.com" onclick="get(href);">Crickbuzz</a>
+        <a href="https://en.wikipedia.org/wiki/PHP" onclick="get(href);">wikipedia</a>
+    </ul>
+    
+    <!-- <script type="text/javascript">
+        function get(x){
+            alert(x);
+        }
+        
+    </script> -->
+    <script  type="text/javascript">
+        $("a").on("click",function(){
+            alert("hello");
+            // var share_link = $(this).prop('href');
+            // window.open(share_link,'','scrollbars=1,height=500,width=500,left=500,top=100');
+             });
+        </script>
+</body>
+</html>
